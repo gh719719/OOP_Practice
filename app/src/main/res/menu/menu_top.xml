@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/baseline_info"
+        android:title="이 앱에 관하여" />
+    <item
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="MBTI 검사" />
+</menu>

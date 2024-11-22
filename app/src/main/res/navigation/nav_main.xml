@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.example.mynavapplication.EntryFragment"
+        android:label="MBTI 검사 입구"
+        tools:layout="@layout/fragment_entry">
+        <action
+            android:id="@+id/action_entryFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_examineFragment"
+            app:destination="@id/examineFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.mynavapplication.aboutFragment"
+        android:label="MBTI 검사에 관하여"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/examineFragment"
+        android:name="com.example.mynavapplication.ExamineFragment"
+        android:label="MBTI 검사지"
+        tools:layout="@layout/fragment_examine">
+        <action
+            android:id="@+id/action_examineFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mynavapplication.SettingsFragment"
+        android:label="MBTI 검사 설정"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.mynavapplication.resultFragment"
+        android:label="MBTI 결과"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_examineFragment"
+            app:destination="@id/examineFragment"
+            app:popUpTo="@id/examineFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
