@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064815812225",
+    "project_id": "my-nav-application-d08d4",
+    "storage_bucket": "my-nav-application-d08d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064815812225:android:269e6af26324b5fac9f780",
+        "android_client_info": {
+          "package_name": "com.example.mynavapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq9t5qxm7ZBcPqDB3AvC07nfxbby7CxoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

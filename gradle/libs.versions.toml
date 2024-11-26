@@ -1,4 +1,8 @@
 [versions]
+androidx-appcompat = "1.6.1"
+fragment = "1.8.3"
+navigation = "2.7.3"
+androidx-lifecycle = "2.6.1"
 agp = "8.7.2"
 kotlin = "1.9.24"
 coreKtx = "1.15.0"
@@ -11,8 +15,12 @@ activity = "1.9.3"
 constraintlayout = "2.1.4"
 navigationFragmentKtx = "2.8.4"
 navigationUiKtx = "2.8.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
 
 [libraries]
+androidx-activity-ktx = "androidx.activity:activity-ktx:1.9.3"
+androidx-fragment-ktx = "androidx.fragment:fragment-ktx:{versions.fragment}"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -23,8 +31,12 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle"}
+navigation-fragment-ktx = "androidx.navigation:navigation-fragment-ktx:{versions.navigation}"
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 

@@ -7,6 +7,11 @@
         android:icon="@drawable/baseline_info"
         android:title="이 앱에 관하여" />
     <item
-        android:icon="@android:drawable/ic_menu_help"
+        android:id="@+id/examineFragment"
+        android:icon="@drawable/baseline_article_24"
         android:title="MBTI 검사" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/baseline_app_settings_alt_24"
+        android:title="설정" />
 </menu>

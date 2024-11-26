@@ -3,23 +3,8 @@
              xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/entryFragment">
+    app:startDestination="@id/examineFragment">
 
-    <fragment
-        android:id="@+id/entryFragment"
-        android:name="com.example.mynavapplication.EntryFragment"
-        android:label="MBTI 검사 입구"
-        tools:layout="@layout/fragment_entry">
-        <action
-            android:id="@+id/action_entryFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment" />
-        <action
-            android:id="@+id/action_entryFragment_to_examineFragment"
-            app:destination="@id/examineFragment" />
-        <action
-            android:id="@+id/action_entryFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.mynavapplication.aboutFragment"
